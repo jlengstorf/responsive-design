@@ -10,9 +10,7 @@ jQuery(function($){
         var inputs = $('.input-text');
         inputs.each(function() {
             var thisCache = $(this),
-                label     = thisCache.closest('label')
-                                .find('span')
-                                    .text().toLowerCase();
+                label     = thisCache.closest('label').find('span').text();
 
             if( thisCache.val() == '' ) {
                 thisCache.val( label );
