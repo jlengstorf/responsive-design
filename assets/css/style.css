@@ -28,7 +28,7 @@ font-family:'GoudyMTW01-BoldItalic';
 
 h1 {
     font-family: 'Futura W01 Light', sans-serif;
-    font-weight: 100;
+    font-weight: normal;
     text-transform: uppercase;
     letter-spacing: .6em;
     color: #e7d4c6;
@@ -36,13 +36,13 @@ h1 {
 
 h1 strong {
     font-family: 'Futura W01 Bold', sans-serif;
-    font-weight: 700;
+    font-weight: normal;
 }
 
 h2,h3 {
     color: #e7d4c6;
     font-family: 'Futura W01 Book', sans-serif;
-    font-weight: 500;
+    font-weight: normal;
 }
 
 h2 a {
@@ -66,7 +66,7 @@ nav li {
 nav a,article footer a {
     text-decoration: none;
     font-family: 'Futura W01 Book', sans-serif;
-    font-weight: 400;
+    font-weight: normal;
     text-transform: uppercase;
     letter-spacing: .5em;
     color: #e7d4c6;
