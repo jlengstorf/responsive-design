@@ -145,6 +145,11 @@ body>footer>p>a,body>footer>p>span>a {
     letter-spacing: .2em;
 }
 
+/* Addresses a Firefox bug where placeholders don't respect padding */
+:-moz-placeholder {
+    text-indent: 0.5em;
+}
+
 .input-submit {
     display: block;
     padding: 1%;
