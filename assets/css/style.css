@@ -8,10 +8,27 @@
 /* TYPOGRAPHY
  *****************************************************************************/
 
+/*
+fonts.com loads the following:
+
+font-family:'Futura W01 Bold';
+font-family:'Futura W01 Bold Oblique';
+font-family:'Futura W01 Book';
+font-family:'Futura W01 Book Oblique';
+font-family:'Futura W01 Light';
+font-family:'FuturaW01-LightOblique';
+font-family:'Futura W01 Medium';
+font-family:'FuturaW01-MediumOblique';
+font-family:'GoudyOldStyleMTW01-Ital';
+font-family:'Goudy Old Style MT W01';
+font-family:'Goudy MT W01 Bold';
+font-family:'GoudyMTW01-BoldItalic';
+
+*/
 @import 'http://fast.fonts.com/cssapi/e55020fc-1271-4b56-8fb7-46ab7c22495d.css';
 
 h1 {
-    font-family: 'FuturaLT-Light', sans-serif;
+    font-family: 'Futura W01 Light', sans-serif;
     font-weight: 100;
     text-transform: uppercase;
     letter-spacing: .6em;
@@ -19,13 +36,13 @@ h1 {
 }
 
 h1 strong {
-    font-family: 'FuturaLT-Bold', sans-serif;
+    font-family: 'Futura W01 Bold', sans-serif;
     font-weight: 700;
 }
 
 h2,h3 {
     color: #e7d4c6;
-    font-family: 'FuturaLT-Book', sans-serif;
+    font-family: 'Futura W01 Book', sans-serif;
     font-weight: 500;
 }
 
@@ -37,7 +54,7 @@ h2 a {
 }
 
 h3,h3 a {
-    font-family: 'FuturaLT-Bold', sans-serif;
+    font-family: 'Futura W01 Bold', sans-serif;
     color: #955240;
     text-transform: uppercase;
     letter-spacing: .4em;
@@ -49,7 +66,7 @@ nav li {
 
 nav a,article footer a {
     text-decoration: none;
-    font-family: 'FuturaLT-Book', sans-serif;
+    font-family: 'Futura W01 Book', sans-serif;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: .5em;
@@ -63,7 +80,7 @@ article footer a {
 
 p,li {
     color: #3c2722;
-    font-family: 'GoudyBookletter1911', georgia;
+    font-family: 'Goudy Old Style MT W01', georgia;
     letter-spacing: .1em;
 }
 
@@ -110,7 +127,7 @@ body>footer {
 body>footer>p {
     margin: 2px 0;
     color: #f2ebe6;
-    font-family: 'FuturaLT-Book', sans-serif;
+    font-family: 'Futura W01 Book', sans-serif;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: .3em;
@@ -118,14 +135,14 @@ body>footer>p {
 
 body>footer>p>a,body>footer>p>span>a {
     color: #f2ebe6;
-    font-family: 'FuturaLT-Bold', sans-serif;
+    font-family: 'Futura W01 Bold', sans-serif;
 }
 
 .input-text {
     border: 1px solid #3c2722;
     margin: 0 0 5px;
     padding: 1% 2%;
-    font-family: 'FuturaLT-Light', sans-serif;
+    font-family: 'Futura W01 Light', sans-serif;
     letter-spacing: .2em;
 }
 
@@ -136,7 +153,7 @@ body>footer>p>a,body>footer>p>span>a {
     line-height: 20px;
     border: 0px solid #bb4728;
     background: #bb4728;
-    font-family: 'FuturaLT-Bold', sans-serif;
+    font-family: 'Futura W01 Bold', sans-serif;
     text-transform: uppercase;
     letter-spacing: .4em;
     color: #f2ebe6;
@@ -488,7 +505,7 @@ body>footer>p>a,body>footer>p>span>a {
     article h2 {
         margin-top: 1em;
         margin-bottom: 0;
-        font-family: 'FuturaLT-Bold', sans-serif;
+        font-family: 'Futura W01 Bold', sans-serif;
         font-size: 16px;
         line-height: 20px;
     }
