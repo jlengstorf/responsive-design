@@ -137,6 +137,11 @@ body>footer>p>a,body>footer>p>span>a {
     font-family: 'Futura W01 Bold', sans-serif;
 }
 
+label>span {
+    position: absolute;
+    left: -10000px;
+}
+
 .input-text {
     border: 1px solid #3c2722;
     margin: 0 0 5px;
