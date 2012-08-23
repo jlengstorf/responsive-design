@@ -8,25 +8,41 @@
 /* TYPOGRAPHY
  *****************************************************************************/
 
-@import 'http://fast.fonts.com/cssapi/e55020fc-1271-4b56-8fb7-46ab7c22495d.css';
+/*
+fonts.com loads the following:
+
+font-family:'Futura W01 Bold';
+font-family:'Futura W01 Bold Oblique';
+font-family:'Futura W01 Book';
+font-family:'Futura W01 Book Oblique';
+font-family:'Futura W01 Light';
+font-family:'FuturaW01-LightOblique';
+font-family:'Futura W01 Medium';
+font-family:'FuturaW01-MediumOblique';
+font-family:'GoudyOldStyleMTW01-Ital';
+font-family:'Goudy Old Style MT W01';
+font-family:'Goudy MT W01 Bold';
+font-family:'GoudyMTW01-BoldItalic';
+
+*/
 
 h1 {
-    font-family: 'FuturaLT-Light', sans-serif;
-    font-weight: 100;
+    font-family: 'Futura W01 Light', sans-serif;
+    font-weight: normal;
     text-transform: uppercase;
     letter-spacing: .6em;
     color: #e7d4c6;
 }
 
 h1 strong {
-    font-family: 'FuturaLT-Bold', sans-serif;
-    font-weight: 700;
+    font-family: 'Futura W01 Bold', sans-serif;
+    font-weight: normal;
 }
 
 h2,h3 {
     color: #e7d4c6;
-    font-family: 'FuturaLT-Book', sans-serif;
-    font-weight: 500;
+    font-family: 'Futura W01 Book', sans-serif;
+    font-weight: normal;
 }
 
 h2 a {
@@ -37,7 +53,7 @@ h2 a {
 }
 
 h3,h3 a {
-    font-family: 'FuturaLT-Bold', sans-serif;
+    font-family: 'Futura W01 Bold', sans-serif;
     color: #955240;
     text-transform: uppercase;
     letter-spacing: .4em;
@@ -49,8 +65,8 @@ nav li {
 
 nav a,article footer a {
     text-decoration: none;
-    font-family: 'FuturaLT-Book', sans-serif;
-    font-weight: 400;
+    font-family: 'Futura W01 Book', sans-serif;
+    font-weight: normal;
     text-transform: uppercase;
     letter-spacing: .5em;
     color: #e7d4c6;
@@ -63,7 +79,7 @@ article footer a {
 
 p,li {
     color: #3c2722;
-    font-family: 'GoudyBookletter1911', georgia;
+    font-family: 'Goudy Old Style MT W01', georgia;
     letter-spacing: .1em;
 }
 
@@ -110,7 +126,7 @@ body>footer {
 body>footer>p {
     margin: 2px 0;
     color: #f2ebe6;
-    font-family: 'FuturaLT-Book', sans-serif;
+    font-family: 'Futura W01 Book', sans-serif;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: .3em;
@@ -118,15 +134,25 @@ body>footer>p {
 
 body>footer>p>a,body>footer>p>span>a {
     color: #f2ebe6;
-    font-family: 'FuturaLT-Bold', sans-serif;
+    font-family: 'Futura W01 Bold', sans-serif;
+}
+
+label>span {
+    position: absolute;
+    left: -10000px;
 }
 
 .input-text {
     border: 1px solid #3c2722;
     margin: 0 0 5px;
     padding: 1% 2%;
-    font-family: 'FuturaLT-Light', sans-serif;
+    font-family: 'Futura W01 Light', sans-serif;
     letter-spacing: .2em;
+}
+
+/* Addresses a Firefox bug where placeholders don't respect padding */
+:-moz-placeholder {
+    text-indent: 0.5em;
 }
 
 .input-submit {
@@ -136,14 +162,285 @@ body>footer>p>a,body>footer>p>span>a {
     line-height: 20px;
     border: 0px solid #bb4728;
     background: #bb4728;
-    font-family: 'FuturaLT-Bold', sans-serif;
+    font-family: 'Futura W01 Bold', sans-serif;
     text-transform: uppercase;
     letter-spacing: .4em;
     color: #f2ebe6;
 }
 
 
-/* LARGE SCREENS (1140px)
+/* SMALLEST/MOBILE SCREENS (639px or less)
+ *****************************************************************************/
+body {
+    width: 94%;
+    min-width: 338px;
+    margin: 0;
+    padding: 0 3%;
+}
+
+header {
+    margin: 1em 0;
+    padding: 1em 15px;
+    text-align: center;
+}
+
+h1 {
+    width: 320px;
+    margin: 0 auto 1em;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+h1 strong {
+    display: block;
+    text-align: center;
+    font-size: 22.4px;
+    line-height: 30px;
+    margin-bottom: .25em;
+}
+
+p,li {
+    font-size: 17px;
+    line-height: 22px;
+}
+
+nav ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: block;
+    margin: 0;
+    padding: 1% 0;
+    font-size: 18px;
+}
+
+nav li a {
+    padding: .75em
+}
+
+article {
+    position: relative;
+    margin: 0 0 2em;
+    overflow: hidden;
+}
+
+article header {
+    margin: 0;
+    padding: 0 4%;
+    text-align: left;
+}
+
+article h2 {
+    margin-top: 1em;
+    margin-bottom: 0;
+    font-family: 'Futura W01 Bold', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+article header p {
+    margin: 0 0 1em;
+    padding: 0;
+    font-size: 16px;
+    color: #f2ebe6;
+}
+
+article header p a {
+    color: #f2ebe6;
+}
+
+article img {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+article p {
+    margin: 2% 1% 1em;
+    padding: 0;
+}
+
+article footer {
+    text-align: right;
+}
+
+article footer a {
+    font-size: 14px;
+    padding: .75em;
+}
+
+aside {
+    margin: 1.5em 0;
+    padding: 1.5em 0;
+    border-top: 1px dashed #955240;
+    border-bottom: 1px dashed #955240;
+}
+
+aside h3 {
+    font-size: 17px;
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+aside p {
+    margin: 0 0 1em;
+}
+
+aside .input-text {
+    width: 44.9%;
+    font-size: 18px;
+}
+
+aside .input-text.email {
+    width: 95.5%;
+}
+
+aside .input-submit {
+    width: 99.9%;
+    padding: 2% 0;
+}
+
+body>footer {
+    margin-bottom: 1em;
+}
+
+body>footer>p {
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: .1em;
+}
+
+body>footer>p>span {
+    display: block;
+}
+
+
+/* SMALL SCREENS (640px to 767px)
+ *****************************************************************************/
+@media screen and (min-width: 640px) {
+
+    body {
+        min-width: 602px;
+        margin: 0;
+        padding: 0 3%;
+    }
+
+    h1 {
+        width: 100%;
+        margin: 0 0 1em;
+        font-size: 12px;
+    }
+
+    h1 strong {
+        font-size: 22.4px;
+    }
+
+    p,li {
+        font-size: 19px;
+        line-height: 25px;
+    }
+
+    nav li {
+        display: inline;
+        margin: 0 1em;
+        padding: 0;
+        font-size: 16px;
+    }
+
+    aside .input-text {
+        width: 45.33%;
+        font-size: 18px;
+    }
+
+    aside .input-text.email {
+        width: 95.7%;
+    }
+
+    aside .input-submit {
+        width: 100%;
+    }
+
+}
+
+
+/* MEDIUM SCREENS (768 to 1024px)
+ *****************************************************************************/
+@media screen and (min-width: 768px) {
+
+    body {
+        width: 96%;
+        padding: 0 2%;
+    }
+
+    h1 {
+        font-size: 14px;
+    }
+
+    h1 strong {
+        font-size: 26px;
+    }
+
+    p,li {
+        font-size: 17px;
+        line-height: 25px;
+    }
+
+    article {
+        position: relative;
+        float: left;
+        width: 55%;
+        margin: 0 3% 2em 0;
+    }
+
+    article header {
+        padding: 0 4%;
+    }
+
+    article h2 {
+        margin-bottom: .5em;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    article header p {
+        font-size: 14px;
+    }
+
+    aside {
+        float: right;
+        width: 42%;
+        margin: 0 0 2%;
+        padding: 0;
+        border: none;
+    }
+
+    aside h3 {
+        font-size: 16px;
+    }
+
+    aside .input-text {
+        width: 95%;
+        font-size: 20px;
+    }
+
+    aside .input-submit {
+        width: 99.5%;
+        padding: 3% 0;
+    }
+
+    body>footer>p {
+        font-size: 9px;
+        letter-spacing: .3em;
+    }
+
+}
+
+
+/* LARGE SCREENS (1025px and up)
  *****************************************************************************/
 @media screen and (min-width: 1025px) {
 
@@ -151,13 +448,11 @@ body>footer>p>a,body>footer>p>span>a {
         width: 98%;
         max-width: 1140px;
         margin: 0 auto;
-        padding: 0;
+        padding: 0 1%;
     }
 
     header {
-        margin: 2em 0 2em;
-        padding: 10px 15px 15px;
-        text-align: center;
+        margin: 2em 0;
     }
 
     h1 {
@@ -165,30 +460,29 @@ body>footer>p>a,body>footer>p>span>a {
         width: 85%;
         margin: 0;
         font-size: 18.3px;
+        line-height: 22px;
     }
 
     h1 strong {
-        display: block;
-        text-align: center;
         font-size: 33.2px;
-    }
-
-    nav ul {
-        margin: 8px 0 0;
-        padding: 0;
+        line-height: 33.2px;
     }
 
     nav li {
+        display: block;
+        margin: 0;
         text-align: right;
         font-size: 15px;
+        line-height: 20px;
+    }
+
+    nav li a {
+        padding: 0;
     }
 
     article {
-        position: relative;
-        float: left;
         width: 60%;
         margin: 0 5% 2em 0;
-        overflow: hidden;
     }
 
     article header {
@@ -196,7 +490,6 @@ body>footer>p>a,body>footer>p>span>a {
         width: 30%;
         margin: 0;
         padding: 0 2%;
-        text-align: left;
     }
     
     article h2 {
@@ -208,19 +501,11 @@ body>footer>p>a,body>footer>p>span>a {
 
     article header p {
         margin: 0 0 15px;
-        padding: 0;
         font-size: 12px;
-        color: #f2ebe6;
-    }
-
-    article header p a {
-        color: #f2ebe6;
+        line-height: 15px;
     }
 
     article img {
-        display: block;
-        margin: 0;
-        padding: 0;
         width: 66%;
     }
 
@@ -236,7 +521,6 @@ body>footer>p>a,body>footer>p>span>a {
         position: absolute;
         bottom: 0;
         left: 34%;
-        display: block;
         width: 66%;
         text-align: right;
     }
@@ -246,328 +530,34 @@ body>footer>p>a,body>footer>p>span>a {
     }
 
     aside {
-        float: right;
         width: 35%;
         margin: 0 0 2%;
-        padding: 0;
-    }
-
-    aside h3 {
-        margin-top: 0;
-        margin-bottom: 1em;
     }
 
     aside p {
         float: left;
         width: 50%;
         margin: 0 5% 0 0;
+        font-size: 14px;
+        line-height: 20px;
     }
    
-    aside .input-text {
+    aside .input-text,aside .input-text.email {
         width: 40%;
+        font-size: 16px;
     }
 
     aside .input-submit {
         width: 44.5%;
+        padding: 1.5% 0;
     }
 
     body>footer>p {
         font-size: 8px;
     }
 
-}
-
-
-/* MEDIUM SCREENS (768 to 1024px)
- *****************************************************************************/
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-
-    body {
-        width: 96%;
-        margin: 0;
-        padding: 0 2%;
-    }
-
-    header {
-        margin: 1em 0 1em;
-        padding: 1em 15px;
-        text-align: center;
-    }
-
-    h1 {
-        width: 100%;
-        margin: 0 0 1em;
-        font-size: 14px;
-    }
-
-    h1 strong {
-        display: block;
-        text-align: center;
-        font-size: 26px;
-    }
-
-    p,li {
-        font-size: 17px;
-        line-height: 25px;
-    }
-
-    nav ul {
-        display: block;
-        margin: 0;
-        padding: 0;
-    }
-
-    nav li {
-        display: inline;
-        margin: 0 1em;
-        font-size: 16px;
-    }
-
-    nav li a {
-        padding: .75em
-    }
-
-    article {
-        position: relative;
-        float: left;
-        width: 55%;
-        margin: 0 3% 2em 0;
-        overflow: hidden;
-    }
-
-    article header {
-        width: 100%;
-        margin: 0;
-        padding: 0 4%;
-        text-align: left;
-    }
-    
-    article h2 {
-        margin-top: 1em;
-        margin-bottom: .5em;
-        font-size: 20px;
-        line-height: 30px;
-    }
-
-    article header p {
-        margin: 0 0 1em;
-        padding: 0;
-        font-size: 14px;
-        color: #f2ebe6;
-    }
-
-    article header p a {
-        color: #f2ebe6;
-    }
-
-    article img {
-        display: block;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-    }
-
-    article p {
-        margin: 2% 1% 1em;
-        padding: 0;
-    }
-
-    article footer {
-        text-align: right;
-    }
-
-    article footer a {
-        font-size: 14px;
-        padding: .75em;
-    }
-
-    aside {
-        float: right;
-        width: 42%;
-        margin: 0 0 2%;
-        padding: 0;
-    }
-
-    aside h3 {
-        margin-top: 0;
-        margin-bottom: 1em;
-    }
-
-    aside p {
-        margin: 0 0 1em;
-    }
-   
-    aside .input-text {
-        width: 95%;
-        font-size: 20px;
-    }
-
-    aside .input-submit {
-        width: 99.5%;
-        padding: 3% 0;
-    }
-
-    body>footer {
-        margin-bottom: 1em;
-    }
-
-    body>footer>p {
-        font-size: 9px;
-        letter-spacing: .2em;
-    }
-
     body>footer>p>span {
-        display: block;
-    }
-
-}
-
-
-/* SMALL SCREENS (767px or less)
- *****************************************************************************/
-@media screen and (max-width: 767px) {
-
-    body {
-        width: 94%;
-        min-width: 602px;
-        margin: 0;
-        padding: 0 3%;
-    }
-
-    header {
-        margin: 1em 0 1em;
-        padding: 1em 15px;
-        text-align: center;
-    }
-
-    h1 {
-        width: 100%;
-        margin: 0 0 1em;
-        font-size: 12px;
-    }
-
-    h1 strong {
-        display: block;
-        text-align: center;
-        font-size: 22.4px;
-    }
-
-    p,li {
-        font-size: 19px;
-        line-height: 25px;
-    }
-
-    nav ul {
-        display: block;
-        margin: 0;
-        padding: 0;
-    }
-
-    nav li {
         display: inline;
-        margin: 0 1em;
-        font-size: 16px;
-    }
-
-    nav li a {
-        padding: .75em
-    }
-
-    article {
-        position: relative;
-        margin: 0 0 2em;
-        overflow: hidden;
-    }
-
-    article header {
-        margin: 0;
-        padding: 0 4%;
-        text-align: left;
-    }
-    
-    article h2 {
-        margin-top: 1em;
-        margin-bottom: 0;
-        font-family: 'FuturaLT-Bold', sans-serif;
-        font-size: 16px;
-        line-height: 20px;
-    }
-
-    article header p {
-        margin: 0 0 1em;
-        padding: 0;
-        font-size: 16px;
-        color: #f2ebe6;
-    }
-
-    article header p a {
-        color: #f2ebe6;
-    }
-
-    article img {
-        display: block;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-    }
-
-    article p {
-        margin: 2% 1% 1em;
-        padding: 0;
-    }
-
-    article footer {
-        text-align: right;
-    }
-
-    article footer a {
-        font-size: 14px;
-        padding: .75em;
-    }
-
-    aside {
-        margin: 1.5em 0 1.5em;
-        padding: 1.5em 0;
-        border-top: 1px dashed #955240;
-        border-bottom: 1px dashed #955240;
-    }
-
-    aside h3 {
-        font-size: 17px;
-        margin-top: 0;
-        margin-bottom: 1em;
-    }
-
-    aside p {
-        margin: 0 0 1em;
-    }
-
-    aside .input-text {
-        width: 45.33%;
-        font-size: 18px;
-    }
-   
-    aside .input-text.email {
-        width: 95.7%;
-    }
-
-    aside .input-submit {
-        width: 100%;
-        padding: 2% 0;
-    }
-
-    body>footer {
-        margin-bottom: 1em;
-    }
-
-    body>footer>p {
-        font-size: 10px;
-        line-height: 15px;
-        letter-spacing: .1em;
-    }
-
-    body>footer>p>span {
-        display: block;
     }
 
 }

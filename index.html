@@ -6,10 +6,17 @@
     <meta name="viewport" 
           content="width=device-width; initial-scale=1.0; minimum-scale=1; maximum-scale=1.0; user-scalable=0;" />
     <title>
-        Responsive Web Design: Designing/Developing for the Variable Web
+        Responsive Web Design Now!
     </title>
 
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link type="text/css" rel="stylesheet" 
+          href="http://fast.fonts.com/cssapi/e55020fc-1271-4b56-8fb7-46ab7c22495d.css"/>
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
+
+    <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <link type="text/css" rel="stylesheet" href="assets/css/ie.css" />
+    <![endif]-->
 </head>
 
 <body>
@@ -66,13 +73,23 @@
                 web design. These emails will be infrequent, but we promise 
                 anything we send will be extra juicy.
             </p>
-            <input type="text" name="MERGE1" id="MERGE1" size="25" 
-                   placeholder="First Name" class="input-text" />
-            <input type="text" name="MERGE2" id="MERGE2" size="25" 
-                   placeholder="Last Name" class="input-text" />
-            <input type="email" autocapitalize="off" autocorrect="off" 
-                   name="MERGE0" id="MERGE0" size="25" 
-                   placeholder="Email Address" class="input-text email" />
+
+            <label><span>First Name</span>
+                <input type="text" name="MERGE1" id="MERGE1" size="25" 
+                       placeholder="First Name" class="input-text" />
+            </label>
+
+            <label><span>Last Name</span>
+                <input type="text" name="MERGE2" id="MERGE2" size="25" 
+                       placeholder="Last Name" class="input-text" />
+            </label>
+
+            <label><span>Email Address</span>
+                <input type="email" autocapitalize="off" autocorrect="off" 
+                       name="MERGE0" id="MERGE0" size="25" 
+                       placeholder="Email Address" class="input-text email" />
+            </label>
+
             <input type="submit" value="Subscribe" class="input-submit" />
 
             <input type="hidden" name="u" value="34042625c99172141e2b35836" />
