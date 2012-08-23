@@ -3,6 +3,8 @@
  */
 jQuery(function($){
 
-
+    $('body').click(function(){
+        alert($(window).width());
+    });
 
 });
