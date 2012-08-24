@@ -43,20 +43,18 @@ h2,h3 {
     color: #e7d4c6;
     font-family: 'Futura W01 Book', sans-serif;
     font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: .4em;
 }
 
 h2 a {
     color: #e7d4c6;
     text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: .4em;
 }
 
 h3,h3 a {
     font-family: 'Futura W01 Bold', sans-serif;
     color: #955240;
-    text-transform: uppercase;
-    letter-spacing: .4em;
 }
 
 nav li {
@@ -229,7 +227,7 @@ article {
 
 article header {
     margin: 0;
-    padding: 0 4%;
+    padding: 0 4% .75em;
     text-align: left;
 }
 
@@ -242,7 +240,7 @@ article h2 {
 }
 
 article header p {
-    margin: 0 0 1em;
+    margin: 0;
     padding: 0;
     font-size: 16px;
     color: #f2ebe6;
@@ -397,7 +395,7 @@ body>footer>p>span {
     }
 
     article header {
-        padding: 0 4%;
+        padding: 0 4% 1em;
     }
 
     article h2 {
@@ -489,7 +487,7 @@ body>footer>p>span {
         float: left;
         width: 30%;
         margin: 0;
-        padding: 0 2%;
+        padding: 0 2% 15px;
     }
     
     article h2 {
@@ -500,7 +498,7 @@ body>footer>p>span {
     }
 
     article header p {
-        margin: 0 0 15px;
+        margin: 0;
         font-size: 12px;
         line-height: 15px;
     }
@@ -509,12 +507,16 @@ body>footer>p>span {
         width: 66%;
     }
 
-    article p {
+    article p,article ul {
         margin: 2% 0 10px 34%;
         padding: 0 15px;
         font-size: 16px;
         line-height: 20px;
         letter-spacing: .1em;
+    }
+
+    article ul {
+        margin-left: 36%;
     }
 
     article footer {
